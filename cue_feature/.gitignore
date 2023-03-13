@@ -10,3 +10,4 @@ wandb/
 dbs/*
 # _*/
 logs_cue_feature.zip
+pretrained_models/

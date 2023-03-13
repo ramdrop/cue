@@ -35,4 +35,4 @@ pretrained/
 dataset/
 dbs/*
 logs_cue_segmentation.zip
-# _*/
+pretrained_models/

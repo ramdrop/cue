@@ -80,3 +80,7 @@ First, complete the eval.py script. Then, populate the variables in src/mbox/com
 - To calculate Expected Calibration Error (ECE), run `python src/mbox/qn_sigma.py --uncertainty_method=[method]`. The `ece` folder will be created in the [log_method] directory.
 - To visualize ECE, populate the variables and run `python src/mbox/plot_ece_break.py`. The `meta` folder will be created in the [log_method] directory.
 - To view point cloud visualization, run `python src/mbox/qa_sigma.py --uncertainty_method=[method]`.
+
+### Pretained models
+
+Pretained models available at [Dropbox](https://www.dropbox.com/scl/fo/hutv1krt90v8nck5oir0y/h?dl=0&rlkey=sc7odtmd5y3xhuzl80dvbxec0).

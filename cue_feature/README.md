@@ -18,10 +18,10 @@ $(base)container: ./install_env.sh
     
 To download the required datasets, run the following scripts:
 
-    ```shell
+    
     ./scripts/download_3dmatch.sh dbs/
     ./scripts/download_3dmatch_testbench.sh dbs/
-    ```
+    
 
 ### Train CUE/CUE+
 
@@ -58,3 +58,7 @@ To download the required datasets, run the following scripts:
     # populate the ece_results.pickle path in eval/plot.ece.py and then run
     python eval/plot_ece.py
     ```
+
+### Pretained models
+
+Pretained models available at [Dropbox](https://www.dropbox.com/scl/fo/hutv1krt90v8nck5oir0y/h?dl=0&rlkey=sc7odtmd5y3xhuzl80dvbxec0).

@@ -1,0 +1,29 @@
+include "./config/scannet/train_default.gin"
+
+# [3] uncomment this to take label-255 as a new class 
+#ScanNetRGBDataModule.unlabeled_as_class = True
+#out_channels = 21
+
+# Model
+train.lightning_module_name = "LitSegMinkowskiModuleDUL"
+train.model_name = "Res16UNet34CDUL"
+Res16UNet34CDUL.in_channels = %in_channels
+Res16UNet34CDUL.out_channels = %out_channels
+
+# Trainer COPY FROM DEFAULT
+LitSegMinkowskiModuleDUL.num_classes = %out_channels
+LitSegMinkowskiModuleDUL.lr = 0.1
+LitSegMinkowskiModuleDUL.momentum = 0.9
+LitSegMinkowskiModuleDUL.weight_decay = 1e-4
+LitSegMinkowskiModuleDUL.warmup_steps_ratio = 0.1
+LitSegMinkowskiModuleDUL.best_metric_type = "maximize"
+LitSegMinkowskiModuleDUL.lambda_kl = 0.01
+
+
+# Override
+train.run_name = 'minkdul'
+
+# Logging
+update_hparams.keys = [
+    "LitSegMinkowskiModuleDUL.lambda_kl"
+]

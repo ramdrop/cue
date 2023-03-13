@@ -1,0 +1,8 @@
+defaults:
+  - train: 3dmatch_pair_btls
+  # - eval: ${train}
+  - _self_
+        
+hydra:
+  run:
+    dir: ./${train.out_dir}/${train.trainer}_${now:%m%d}_${now:%H%M%S}

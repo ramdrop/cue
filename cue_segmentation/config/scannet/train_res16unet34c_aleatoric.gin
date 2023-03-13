@@ -1,0 +1,34 @@
+include "./config/scannet/train_default.gin"
+
+# [3] uncomment this to take label-255 as a new class 
+#ScanNetRGBDataModule.unlabeled_as_class = True
+#out_channels = 21
+
+# Model
+train.lightning_module_name = "LitSegMinkowskiModuleAleatoric"
+train.model_name = "Res16UNet34CAleatoric"
+Res16UNet34CAleatoric.in_channels = %in_channels
+Res16UNet34CAleatoric.out_channels = %out_channels
+Res16UNet34CAleatoric.ac_type = "softplus"  
+
+# Trainer COPY FROM DEFAULT
+LitSegMinkowskiModuleAleatoric.num_classes = %out_channels
+LitSegMinkowskiModuleAleatoric.lr = 0.1
+LitSegMinkowskiModuleAleatoric.momentum = 0.9
+LitSegMinkowskiModuleAleatoric.weight_decay = 1e-4
+LitSegMinkowskiModuleAleatoric.warmup_steps_ratio = 0.1
+LitSegMinkowskiModuleAleatoric.best_metric_type = "maximize"
+
+# Aleatoric loss
+AleatoricLoss.is_log_sigma=False
+AleatoricLoss.nb_samples=10 # follow 'Reliability and Challenges of Uncertainty Estimations'
+
+# Override
+train.run_name = 'minkaleatoric'
+
+# Logging
+update_hparams.keys = [
+    "AleatoricLoss.is_log_sigma",
+    "AleatoricLoss.nb_samples",
+    "Res16UNet34CAleatoric.ac_type"
+]

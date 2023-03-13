@@ -1,0 +1,7 @@
+# Constants
+in_channels = 3
+out_channels = 20
+
+
+Res16UNet34CAleatoric.in_channels = %in_channels
+Res16UNet34CAleatoric.out_channels = %out_channels

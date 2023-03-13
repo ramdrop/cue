@@ -1,0 +1,63 @@
+# trainer
+trainer: HCL
+val_every_epoch: 1
+stat_every_iter: 10 # record to tensorboard every [stat_freq] iteration
+best_val_metric: feat_match_ratio
+max_epoch: 100
+val_max_iter: 400
+out_dir: logs
+nn_max_n: 500
+test_valid: False
+
+# network
+model: DDPNetBN2C
+model_n_out: 32
+conv1_kernel_size: 5
+normalize_feature: True
+mc_p: 0
+bn_momentum: 0.05
+
+# network resume
+phase: # train_sigma  | finetune
+weights: 
+resume:
+
+# loss
+num_pos_per_batch: 1024
+num_hn_samples_per_batch: 256
+pos_thresh: 0.1
+neg_thresh: 1.4
+neg_weight: 1
+bayesian_margin: 0
+triplet_num_pos: 256
+triplet_num_hn: 512
+triplet_num_rand: 1024
+
+# optimiser
+optimizer: SGD
+lr: 1e-1
+momentum: 0.8
+weight_decay: 1e-4
+iter_size: 1
+exp_gamma: 0.99
+
+# dataset
+dataset: ThreeDMatchPairDataset
+voxel_size: 0.025
+threed_match_dir: dbs/threedmatch/threedmatch
+positive_pair_search_voxel_size_multiplier: 1.5
+hit_ratio_thresh: 0.1
+
+# data augmentation
+use_random_scale: False
+min_scale: 0.8
+max_scale: 1.2
+use_random_rotation: True
+rotation_range: 360
+
+# dataloader
+train_num_thread: 2
+val_num_thread: 1
+test_num_thread: 0
+batch_size: 4
+val_batch_size: 1

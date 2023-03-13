@@ -1,0 +1,14 @@
+# ninja log v5
+2	6313	1678486713	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda.o	e3ed5a5a8b0eea49
+2	6373	1678486713	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/subtraction/subtraction_cuda.o	c3264e63ffeec66c
+0	6482	1678486713	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/aggregation/aggregation_cuda.o	64db131c491e6024
+2	6496	1678486713	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda.o	1973646399d10d04
+1	6686	1678486713	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda.o	281ec3e7d1e279ea
+1	6793	1678486714	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda.o	2cb1896889a5b1c8
+1	16982	1678486724	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda_kernel.o	c8356ff9698c4a03
+2	17463	1678486724	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda_kernel.o	2de162b0cb50beb3
+1	17735	1678486724	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda_kernel.o	a7ad4f7a42919e4e
+2	17754	1678486724	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/subtraction/subtraction_cuda_kernel.o	6cd02a76f6d9c8b2
+1	17765	1678486724	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/aggregation/aggregation_cuda_kernel.o	d6aff34b7d5b550f
+2	18183	1678486725	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda_kernel.o	8afe5463ebeeb32e
+2	20971	1678486728	/LOCAL2/ramdrop/github/point_registration/cue_segmentation/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-cpython-38/src/pointops_api.o	d4646db1329de1a2

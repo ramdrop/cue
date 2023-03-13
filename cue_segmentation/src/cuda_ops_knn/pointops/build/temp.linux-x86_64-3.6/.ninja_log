@@ -1,0 +1,14 @@
+# ninja log v5
+8	12522	1654546714190560896	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/aggregation/aggregation_cuda.o	5f752d4f16ed7ab1
+2	12724	1654546714390560599	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/sampling/sampling_cuda.o	6867cfd26dcd4a5e
+1	13350	1654546715018559666	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/knnquery/knnquery_cuda.o	3c61466dd70a619d
+4	13351	1654546715018559666	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/interpolation/interpolation_cuda.o	58b2c85dbb159e77
+3	13836	1654546715502558946	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/grouping/grouping_cuda.o	9e3611aeb9551bc5
+5	13859	1654546715526558911	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/subtraction/subtraction_cuda.o	ac21b0d5b72d7ede
+1	31678	1654546733334532357	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/knnquery/knnquery_cuda_kernel.o	10890cdbdb2ee4ae
+4	32140	1654546733798531663	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/interpolation/interpolation_cuda_kernel.o	4d286098c4c54b43
+9	32663	1654546734322530879	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/aggregation/aggregation_cuda_kernel.o	4e83024380bff1f1
+3	32876	1654546734534530562	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/grouping/grouping_cuda_kernel.o	1f4aa450119b350f
+6	32885	1654546734542530550	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/subtraction/subtraction_cuda_kernel.o	e4530b09761806d
+2	33493	1654546735150529640	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/sampling/sampling_cuda_kernel.o	9c52b039cc07a655
+0	38209	1654546739866522577	/LOCAL2/ramdrop/github/SpatioTemporalSegmentation-ScanNet/lib_ops/pointops/build/temp.linux-x86_64-3.6/src/pointops_api.o	33a0b31c3de32f55

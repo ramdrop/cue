@@ -1,0 +1,9 @@
+mink, 5, 10 | paras:36.88M, 0.317 +- 0.000                                                                                                                                                
+se, 5, 10 | paras:36.88M, 0.327 +- 0.000                                                                                                                                                  
+au, 5, 10 | paras:36.90M, 0.318 +- 0.000                                                                                                                                                  
+dul, 5, 10 | paras:36.90M, 0.327 +- 0.000                                                                                                                                                 
+rul, 5, 10 | paras:36.90M, 0.323 +- 0.000                                                                                                                                                 
+cue, 5, 10 | paras:36.90M, 0.317 +- 0.000                                                                                                                                                 
+cueplus, 5, 10 | paras:36.91M, 0.321 +- 0.000                                                                                                                                             
+applying MC dropout p=0.05 after every conv layer..
+mcd, 5, 1 | paras:36.88M, 13.043 +- 0.015 

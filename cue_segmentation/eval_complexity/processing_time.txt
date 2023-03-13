@@ -1,0 +1,10 @@
+(fpt) root:FastPointTransformer# ./processing_time.sh 
+mink, paras:36.88M, 0.163292, 0.0001
+se, paras:36.88M, 0.164575, 0.0002
+au, paras:36.90M, 0.172103, 0.0001
+dul, paras:36.90M, 0.172388, 0.0001
+rul, paras:36.90M, 0.164691, 0.0001
+cue, paras:36.90M, 0.172852, 0.0001
+cueplus, paras:36.91M, 0.174099, 0.0001
+applying MC dropout p=0.05 after every conv layer..
+mcd, paras:36.88M, 6.506516, 0.0004

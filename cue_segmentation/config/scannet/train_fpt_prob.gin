@@ -1,0 +1,38 @@
+include "./config/scannet/train_default.gin"
+
+# Model
+train.lightning_module_name = "LitSegMinkowskiModuleProb"
+train.model_name = "FastPointTransformerProb"
+FastPointTransformerProb.in_channels = %in_channels
+FastPointTransformerProb.out_channels = %out_channels
+FastPointTransformerProb.max_t = -1
+FastPointTransformerProb.logit_norm = False
+
+# Trainer COPY FROM DEFAULT
+LitSegMinkowskiModuleProb.metric_weight = 0
+LitSegMinkowskiModuleProb.num_classes = %out_channels
+LitSegMinkowskiModuleProb.lr = 0.1
+LitSegMinkowskiModuleProb.momentum = 0.9
+LitSegMinkowskiModuleProb.weight_decay = 1e-4
+LitSegMinkowskiModuleProb.warmup_steps_ratio = 0.1
+LitSegMinkowskiModuleProb.best_metric_type = "maximize"
+
+# Metric loss
+MetricLoss.nsample = 36
+MetricLoss.margin = 0
+MetricLoss.varPrior = 7.8125e-3 # 1/128
+MetricLoss.kl_scale_factor = 1e-4
+
+# Logging
+update_hparams.keys = [
+    "LitSegMinkowskiModuleProb.metric_weight",
+    "FastPointTransformerProb.max_t",
+    "FastPointTransformerProb.logit_norm",
+    "MetricLoss.nsample",
+    "MetricLoss.margin",
+    "MetricLoss.varPrior",
+    "MetricLoss.kl_scale_factor",
+]
+
+# Override
+ScanNetRGBDataModule.train_batch_size = 2

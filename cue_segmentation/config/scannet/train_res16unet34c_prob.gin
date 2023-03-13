@@ -1,0 +1,42 @@
+include "./config/scannet/train_default.gin"
+
+# [3] uncomment this to take label-255 as a new class 
+#ScanNetRGBDataModule.unlabeled_as_class = True
+#out_channels = 21
+
+# Trainer COPY FROM DEFAULT
+LitSegMinkowskiModuleProb.metric_weight = 1
+LitSegMinkowskiModuleProb.num_classes = %out_channels
+LitSegMinkowskiModuleProb.lr = 0.1
+LitSegMinkowskiModuleProb.momentum = 0.9
+LitSegMinkowskiModuleProb.weight_decay = 1e-4
+LitSegMinkowskiModuleProb.warmup_steps_ratio = 0.1
+LitSegMinkowskiModuleProb.best_metric_type = "maximize"
+
+# Model
+train.lightning_module_name = "LitSegMinkowskiModuleProb"
+train.model_name = "Res16UNet34CProb"
+Res16UNet34CProb.in_channels = %in_channels
+Res16UNet34CProb.out_channels = %out_channels
+Res16UNet34CProb.max_t = -1
+Res16UNet34CProb.logit_norm = False
+
+# Metric loss
+MetricLoss.nsample = 18
+MetricLoss.margin = 0
+MetricLoss.varPrior = 0.010417  # 1/96
+MetricLoss.kl_scale_factor = 1e-4
+
+# Override
+train.run_name = 'minkprob'
+
+# Logging
+update_hparams.keys = [
+    "Res16UNet34CProb.max_t",
+    "LitSegMinkowskiModuleProb.metric_weight",
+    "Res16UNet34CProb.logit_norm",
+    "MetricLoss.nsample",
+    "MetricLoss.margin",
+    "MetricLoss.varPrior",
+    "MetricLoss.kl_scale_factor",
+]

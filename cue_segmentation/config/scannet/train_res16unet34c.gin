@@ -1,0 +1,15 @@
+# The code should be run on a GPU with at least 24GB memory (e.g., A5000).
+include "./config/scannet/train_default.gin"
+
+# Model
+train.lightning_module_name = "LitSegMinkowskiModule"
+train.model_name = "Res16UNet34C"
+Res16UNet34C.in_channels = %in_channels
+Res16UNet34C.out_channels = %out_channels
+
+# Override
+train.run_name = 'mink'
+
+# Logging
+update_hparams.keys = [
+]

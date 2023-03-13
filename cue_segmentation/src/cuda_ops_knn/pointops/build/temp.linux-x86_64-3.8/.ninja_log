@@ -1,0 +1,14 @@
+# ninja log v5
+2	6519	1655652436362854901	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/grouping/grouping_cuda.o	5d3b54aa0c27c4e0
+1	6561	1655652436402855065	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/knnquery/knnquery_cuda.o	c88c455644fbc180
+1	6719	1655652436558855704	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/interpolation/interpolation_cuda.o	ad5469ed974afbfe
+3	6751	1655652436594855851	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/aggregation/aggregation_cuda.o	11d7a586680510da
+2	6850	1655652436690856244	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/subtraction/subtraction_cuda.o	c988d608c25ae40e
+1	6875	1655652436706856309	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/sampling/sampling_cuda.o	37d5702144db587c
+1	19003	1655652448838905968	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/pointops_api.o	770b572828fc132d
+2	20048	1655652449882910241	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/interpolation/interpolation_cuda_kernel.o	f5bce74f1f3415b1
+3	20071	1655652449906910340	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/aggregation/aggregation_cuda_kernel.o	504c5e5a8c60a0e3
+2	20104	1655652449938910471	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/subtraction/subtraction_cuda_kernel.o	59e2db1b6b4efce4
+1	20140	1655652449974910619	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/knnquery/knnquery_cuda_kernel.o	b19e8520831b873f
+2	20201	1655652450038910880	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/grouping/grouping_cuda_kernel.o	56afb88efcb02d3e
+2	20356	1655652450190911502	/LOCAL2/ramdrop/github/point_registration/FastPointTransformer/src/cuda_ops_knn/pointops/build/temp.linux-x86_64-3.8/src/sampling/sampling_cuda_kernel.o	c9771dbe7f381462

@@ -1,0 +1,12 @@
+include "./config/scannet/eval_default.gin"
+
+# [3] uncomment this to take label-255 as a new class 
+#ScanNetRGBDataModule.unlabeled_as_class = True
+#out_channels = 21
+
+# Model
+eval.model_name = "Res16UNet34CProbMG"
+Res16UNet34CProbMG.in_channels = %in_channels
+Res16UNet34CProbMG.out_channels = %out_channels
+Res16UNet34CProbMG.max_t = -1
+# Res16UNet34CProbMG.logit_norm = False

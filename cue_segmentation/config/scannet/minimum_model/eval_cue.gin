@@ -1,0 +1,12 @@
+# Constants
+in_channels = 3
+out_channels = 20
+
+
+Res16UNet34CProb.in_channels = %in_channels
+Res16UNet34CProb.out_channels = %out_channels
+Res16UNet34CProb.max_t = -1
+
+
+
+

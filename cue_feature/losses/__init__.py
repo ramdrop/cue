@@ -1,0 +1,3 @@
+from losses.bcl import BayesianContrastiveLoss
+from losses.btl import BayesianTripletLoss
+from losses.btl import BayesianTripletLossSampling
